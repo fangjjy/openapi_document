@@ -36,8 +36,37 @@ Content-Type:application/x-www-form-urlencoded
 
 **注意：post请求目前只支持form提交**
 
+接口调用请参见[文档](https://github.com/fangjjy/openapi_document/wiki/%E6%8E%A5%E5%8F%A3%E7%9A%84%E8%B0%83%E7%94%A8%E5%8F%8A%E7%A4%BA%E4%BE%8B)
+
 ## 接口文档
 [参见wiki](https://github.com/fangjjy/openapi_document/wiki/%E5%87%BA%E5%94%AE%E4%BD%8F%E5%AE%85%E6%88%BF%E6%BA%90%E5%AF%BC%E5%85%A5%E6%8E%A5%E5%8F%A3)
+
+
+***
+
+
+## 重要版本更新
+### V2.1.0
+#### 增加多产品推广，包括新搜房帮，品牌公寓，新租房帮，商铺帮，办公帮。
+
+接口字段调整如下：
+1. 房源录入接口：传入参数增加推广产品字段：ptype 
+2. 房源推广接口：传入参数增加推广产品字段：ptype 
+3. 房源列表接口：传入参数增加查询列表字段：ptype  返回增加房源标题图字段photourl。
+4. 住宅、别墅房源描述传参增加新字段（业主心态，社区配套，服务介绍，税费分析）。
+
+### V2.0.0
+#### 授权接口升级
+
+1. 采用了新的OAuth2.0授权方式，兼容原api认证方式。
+用户通过授权接口获取token，并保存。在token有效期时间内，通过在http请求header中加上token来访问OPENAPI。
+2. 权限认证接口返回增加接口URL。
+    该经纪人授权后请求的openapi接口地址请使用这个URL
+
+
+**全部版本请参见** [版本更新](https://github.com/fangjjy/openapi_document/wiki/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0)
+
+***
 
 ## SDK下载
 ### 1.Java SDK
@@ -49,7 +78,9 @@ Content-Type:application/x-www-form-urlencoded
 敬请期待
 
 
-
 ## FAQ
 请参考 [FAQ](https://github.com/fangjjy/openapi_document/wiki/FAQ)
+
+## 联系我们
+Email: api@fang.com
 
