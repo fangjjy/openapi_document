@@ -81,7 +81,7 @@ Content-Type:application/x-www-form-urlencoded
  
 ### 2.Go SDK
 
-  [下载地址]（https://github.com/fangjjy/openapi-go-sdk）
+  [下载地址](https://github.com/fangjjy/openapi-go-sdk)
 
 ### 3.PHP SDK
 
